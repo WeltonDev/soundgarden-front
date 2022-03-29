@@ -49,9 +49,30 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam sunt quo similique,
                         dolorum consectetur inventore ipsam, officiis neque natus eius harum alias quidem. Possimus
                         nobis in inventore tenetur asperiores.</p>
-                    <a href="#" class="btn btn-primary">reservar ingresso</a>
+                    <a class="btn btn-primary">reservar ingresso</a>
+                    
                 </article>
             </div>
+
+            <div id="modal">
+
+                <div id="form">
+                <span class="close">&times;</span> <!--fecha o modal-->
+                <form action="" method="get">
+                    <label for="name">Nome:</label>  <br>
+                    <input type="text" name="name" id="name"> <br>
+                    <label for="email">E-mail:</label> <br>
+                    <input type="email" name="email" id="email"> <br>
+                    <label for="tickets">Ingressos:</label> <br>
+                    <input type="number" name="tickets" id="tickets">
+                    
+                    
+                </form>
+                </div>
+            </div>
+
+            
+
             <div class="container text-center">
                 <a href="eventos.html" class="btn btn-secondary">ver todos os eventos</a>
             </div>
@@ -104,6 +125,8 @@
             </nav>
         </div>
     </footer>
+
+    <script src="./js/landingPage.js"></script>
 </body>
 
 </html>
