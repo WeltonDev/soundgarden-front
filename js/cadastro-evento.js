@@ -43,7 +43,7 @@ form.onsubmit = (evento) => {
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('Não foi possivel cadastrar evento'));
-    alert(`Evento "${inputNome.value}" cadastrado com sucesso`);
+
 
     fundo.style.display = "block";
     cadastroFeito.innerHTML = `<b>${inputNome.value}</b> cadastrado realizado com sucesso !`;
