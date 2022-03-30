@@ -76,7 +76,7 @@ Apenas <a href="#">clique aqui</a> para ver como ficou!.
 <p align='center'>
 Feito por 
   <a href="https://github.com/yaskisoba" target="_blank">Yasmin Rosa</a>|
-  <a href="#" target="_blank">Yasmin Azevedo</a>|
+  <a href="https://github.com/yasmimazevedo" target="_blank">Yasmin Azevedo</a>|
   <a href="https://github.com/WeltonDev" target="_blank">Welton Rodrigues</a>|
   <a href="https://github.com/ZaidaCueto/ZaidaCueto" target="_blank">Zaida Cueto</a>
   </p>
