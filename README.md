@@ -47,13 +47,17 @@
 
 ## :dart: About
 
-Esse é um projeto criado para desenvolver os conhecimentos adquiridos em Consumo de API.
+Esse é um projeto criado para desenvolver os conhecimentos dos alunos adquiridos em consumo de API.
 
 ## :sparkles: Features
 
+:heavy_check_mark: Listar todos os eventos;\
 :heavy_check_mark: Cadastrar um evento;\
 :heavy_check_mark: Editar um evento;\
-:heavy_check_mark: Excluir um evento;
+:heavy_check_mark: Excluir um evento;\
+:heavy_check_mark: Listar todas as reservas;\
+:heavy_check_mark: Cadastrar uma reserva;\
+:heavy_check_mark: Excluir uma reserva;
 
 ## :rocket: Technologies
 
@@ -75,8 +79,8 @@ Apenas <a href="#">clique aqui</a> para ver como ficou!.
 
 <p align='center'>
 Feito por 
-  <a href="https://github.com/yaskisoba" target="_blank">Yasmin Rosa</a>|
-  <a href="https://github.com/yasmimazevedo" target="_blank">Yasmin Azevedo</a>|
-  <a href="https://github.com/WeltonDev" target="_blank">Welton Rodrigues</a>|
-  <a href="https://github.com/ZaidaCueto/ZaidaCueto" target="_blank">Zaida Cueto</a>
+  <a href="https://github.com/yaskisoba" target="_blank">Yasmin Rosa</a> |
+  <a href="https://github.com/yasmimazevedo" target="_blank">Yasmin Azevedo</a> |
+  <a href="https://github.com/WeltonDev" target="_blank">Welton Rodrigues</a> |
+  <a href="https://github.com/ZaidaCueto/ZaidaCueto" target="_blank"> Zaida Cueto</a>
   </p>
