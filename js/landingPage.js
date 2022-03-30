@@ -1,5 +1,5 @@
 //pegando o container
-let modal = document.getElementById("modal");
+let modal = document.getElementById("form");
 
 //pegando o botão que ativa o modal
 let buttonModal = document.querySelector(".btn-primary")
@@ -16,4 +16,3 @@ closeModal.onclick = function() {
 }
 
 
-    

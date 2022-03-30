@@ -49,20 +49,26 @@ footer nav ul li  {
     padding: 10px;
 }
 
-#modal {
-    display: none;
-    background-color: grey;
-    position: fixed;
-    bottom: 58%;
-    top: 13%;
-    right: 38%;
-    left: 42%;
-}
+
 
 #form {
     color: #fff;
     text-align: center;
+    background-color: #aaa;
+    position: fixed;
+    top: 25%;
+    right: 36%;
 }
+
+#submit-button{
+    background-color: #C2185B;
+    border: none;
+    border-radius: 14%;
+    color: #fff;
+    padding: 3px 20px;
+}
+    
+
 
 
 
