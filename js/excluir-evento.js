@@ -62,7 +62,7 @@ const ingressos = parametros.get("ingressos");
 console.log(`O número de ingressos é: ${ingressos}`)
 
 const atracoes = parametros.get("atracoes");
-console.log(`O número de ingressos é: ${atracoes}`)
+console.log(`As atrações são: ${atracoes}`)
 
 inputNome.value = nome;
 inputBanner.value = banner;
@@ -73,32 +73,21 @@ inputData.value = new Date(data).toLocaleDateString('pt-BR', { timeZone: 'UTC' }
 
 
 const deletar = () => {
-    if (inputNome.value == '' || inputIngressos.value == '' || inputData.value == '') {
-        return console.log('Evento não excluido');
-    } else {
-        var requestOptions = {
-            method: 'DELETE',
-            redirect: 'follow',
-            headers: {
-                "Content-Type": "application/json",
-            }
-        };
+    var requestOptions = {
+        method: 'DELETE',
+        redirect: 'follow',
+        headers: {
+            "Content-Type": "application/json",
+        }
+    };
 
 
-        fetch(`https://xp41-soundgarden-api.herokuapp.com/events/${id}`, requestOptions)
-            .then(response => response.text())
-            .then(result => {
-                inputNome.value = '';
-                inputBanner.value = '';
-                inputAtracao.value = '';
-                inputData.value = '';
-                inputDescricao.value = '';
-                inputIngressos.value = '';
-            })
-            .catch(error => console.log('error', error));
-
-
-    }
+    fetch(`https://xp41-soundgarden-api.herokuapp.com/events/${id}`, requestOptions)
+        .then(response => response.text())
+        .then(result => {
+            window.location.href = './admin.html'
+        })
+        .catch(error => alert(`Evento ${nome} não excluido!`));
 
 }
 

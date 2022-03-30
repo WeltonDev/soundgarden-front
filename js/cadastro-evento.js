@@ -16,7 +16,7 @@ btnFechar.onclick = () => {
 
 
 
-form.onsubmit = (evento) => {
+form.onsubmit = async (evento) => {
     evento.preventDefault();
 
     const data = new Date(inputData.value).toISOString();
@@ -39,15 +39,17 @@ form.onsubmit = (evento) => {
         }
     };
 
-    fetch("https://xp41-soundgarden-api.herokuapp.com/events", requestOptions)
+    await fetch("https://xp41-soundgarden-api.herokuapp.com/events", requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
-        .catch(error => console.log('Não foi possivel cadastrar evento'));
-
+        .catch(error => alert('Não foi possivel cadastrar evento.\nPreencha os dados e tente novamente'));
 
     fundo.style.display = "block";
-    cadastroFeito.innerHTML = `<b>${inputNome.value}</b> cadastrado realizado com sucesso !`;
+    cadastroFeito.innerHTML = `<b>${inputNome.value}</b> cadastrado com sucesso !`;
 
+    btnFechar.onclick = () => {
+        window.location.href = './admin.html';
+    }
     // LIMPANDO O FORMULÁRIO APÓS CRIAR EVENTO
     inputNome.value = '';
     inputAtracao.value = '';

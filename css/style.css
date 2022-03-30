@@ -48,34 +48,3 @@ footer nav ul{
 footer nav ul li  {
     padding: 10px;
 }
-
-#modal {
-    display: none;
-    background-color: grey;
-    position: fixed;
-    bottom: 58%;
-    top: 13%;
-    right: 38%;
-    left: 42%;
-}
-
-#form {
-    color: #fff;
-    text-align: center;
-}
-
-
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
