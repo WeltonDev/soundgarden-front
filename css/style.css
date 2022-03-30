@@ -47,4 +47,44 @@ footer nav ul{
 
 footer nav ul li  {
     padding: 10px;
+<<<<<<< HEAD
+=======
+}
+
+
+
+#form {
+    color: #fff;
+    text-align: center;
+    background-color: #aaa;
+    position: fixed;
+    top: 25%;
+    right: 36%;
+}
+
+#submit-button{
+    background-color: #C2185B;
+    border: none;
+    border-radius: 14%;
+    color: #fff;
+    padding: 3px 20px;
+}
+    
+
+
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+>>>>>>> 5ea3630447dd70103cff11b8271b86a8d9c8cb1e
 }
