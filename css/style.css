@@ -47,8 +47,6 @@ footer nav ul{
 
 footer nav ul li  {
     padding: 10px;
-<<<<<<< HEAD
-=======
 }
 
 
@@ -86,5 +84,14 @@ footer nav ul li  {
   color: black;
   text-decoration: none;
   cursor: pointer;
->>>>>>> 5ea3630447dd70103cff11b8271b86a8d9c8cb1e
+}
+article.evento{
+    transition: 1s;
+}
+
+
+article.evento:hover {
+    transform: translate3d(8px, -8px, 0);
+    box-shadow: -5px 5px 5px 5px #00000075;
+    transition: 0.5s;
 }

@@ -3,6 +3,7 @@ const inputEmail = document.querySelector('#email');
 const inputIngressos = document.querySelector('#lotacao');
 const btnEnviar = document.querySelector('#btnEnviar')
 const btnConfirmar = document.querySelector('#btnConfirmar');
+const btnCancelar = document.querySelector('#btnCancelar');
 const parametros = new URLSearchParams(window.location.search)
 const id = parametros.get('id');
 const nome = parametros.get('nome');
@@ -15,6 +16,10 @@ inputIngressos.value = ingressos;
 
 btnEnviar.onclick = () => {
     document.querySelector('.fundo').style.display = 'block';
+}
+
+btnCancelar.onclick = () => {
+    document.querySelector('.fundo').style.display = 'none';
 }
 
 btnConfirmar.onclick = () => {
