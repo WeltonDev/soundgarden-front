@@ -47,3 +47,83 @@
 .text-exclusao {
   font-size: 1.5rem;
 }
+
+
+
+@media only screen and (max-width: 425px){
+
+  .fs-4{
+    display:flex;
+    align-items: center;
+    position:absolute;
+  }
+
+  .img-responsive{
+    position:relative;
+    width: 8em;; 
+    height: 8em;
+    align-items:center;
+  
+    }  
+  button, input, optgroup, select, textarea {
+    margin: -7px;
+  
+}
+  .row{    text-align: center;
+  }
+
+  .btn-danger {
+    width: 15em;
+    margin-top: .5em;
+}
+
+
+
+@media only screen and (max-width: 425px){ 
+.barra-lateral {
+    width: 109%;
+    margin-top: 2rem;
+    margin-bottom: -9em;
+    height: -1em;
+    align-items: center;
+    justify-content: center;
+}
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    margin-top: .5em;
+}
+  aside {
+    min-height: 30vh;
+  
+}
+
+.nav-link .link-dark{
+  display: flex;
+}
+  
+.text-center {
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+}
+
+.mb-3 {
+  width: 15rem;
+  text-align: start;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+.my-5 {
+  margin-top: 6rem!important;
+  margin-bottom: 1rem!important;
+
+}
+.col-9 {
+  
+  width: 100%;
+
+
+}
+.p-5 {
+  padding: 2rem!important;
+}
+}
+}

@@ -5,8 +5,9 @@
 }
 
 #slider {
+    height: 48em;
     width: 79%;
-    max-height: 68%;
+    max-height: 20%;
     height:30rem;
     position: relative;
     display: flex;
@@ -92,19 +93,16 @@
 
     
 #slider{
-    height: 5rem;
+    height: 10rem;
     width: 100%;
 }
-
-
-
     #slider .img {
        
-        border-radius: 0rem; 
-        width: 100%;
-     
-     
-        height: 18rem;
+border-radius: 0rem;
+       
+width: 100%;
+       
+height: 17rem;
     }
 
         .col {
@@ -118,20 +116,11 @@
             padding: 1rem!important;
 
         }
-
+ }
 @media only screen and (max-width: 990px){
     
 
-    .card-eventos {
-       
-        align-items: center;
-       
-    }
-    article.evento {
-        width:400px;
-      
- }
-}
+ 
 
 @media only screen and (max-width: 1024px){
     
@@ -151,12 +140,13 @@
     }
     
 }
+
 }@media only screen and (max-width: 1440px){
     #slider .img {
         max-height: 25rem;
        
     }
     #slider {
-        height: 26rem;
+        height: 19rem;
     }
 }
