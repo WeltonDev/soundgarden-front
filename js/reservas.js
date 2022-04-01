@@ -1,19 +1,11 @@
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get("id");
 
-botaoFechar = document.querySelector('#btnFechar');
-divFundo = document.querySelector('.fundo')
-
-botaoFechar.onclick = () => {
-    divFundo.style.display = 'none'
-}
-
 listaEventos = async (evento) => {
     BASE_URL = "https://xp41-soundgarden-api.herokuapp.com";
 
     try {
-        // //loading: block
-        // document.querySelector('#loading').style.display = 'block';
+
         let requestOptions = {
             method: 'GET',
             headers: {
@@ -24,7 +16,7 @@ listaEventos = async (evento) => {
 
         const resposta = await fetch(`https://xp41-soundgarden-api.herokuapp.com/bookings/event/${id}`, requestOptions)
         const conteudo = await resposta.json();
-        // document.querySelector('.textoReserva').innerHTML += ` ${conteudo[0].event.name}`
+
         console.log(conteudo)
 
         conteudo.forEach((evento, i) => {
@@ -34,15 +26,13 @@ listaEventos = async (evento) => {
             <td>${evento.owner_name}</td>
             <td>${evento.owner_email}</td>
             <td>${evento.number_tickets}</td>
+            <td><a href='excluir-reserva.html?id=${evento._id}&nome=${evento.owner_name}&email=${evento.owner_email}&ingressos=${evento.number_tickets}' class='btn btn-danger'>Excluir Reserva</a></td>
 `
 
             reservas.appendChild(novaReserva);
         })
 
-        if (conteudo.length === 0) {
-            document.querySelector('.fundo').style.display = 'block';
-        }
-        document.querySelector('#loading').style.display = 'none';
+
 
     }
     catch (erro) {
@@ -50,27 +40,25 @@ listaEventos = async (evento) => {
         alert('Este evento ainda possui nenhuma reserva realizada!');
     }
 }
+listaEventos();
 
-
-teste = async () => {
+deletarReserva = async () => {
     try {
         let requestOptions = {
-            method: 'GET',
+            method: 'DELETE',
             headers: {
                 "Content-Type": "application/json"
             }
         };
 
-        const resposta = await fetch(`https://xp41-soundgarden-api.herokuapp.com/events/${id}`, requestOptions)
+        const resposta = await fetch(`https://xp41-soundgarden-api.herokuapp.com/bookings/${id}`, requestOptions)
         const conteudo = await resposta.json();
+
         console.log(conteudo)
-        document.querySelector('.textoReserva').innerHTML += ` <b>${conteudo.name.toUpperCase()}</b>`
-        document.querySelector('.cadastroFeito').innerHTML += `O evento <b>${conteudo.name}</b> ainda não possui reservas!<br>Deseja reservar um ingresso ?`
     }
     catch {
-        alert('deu ruim')
+        alert('Não foi possível deletar essa reserva!')
     }
-}
 
-listaEventos();
-teste();
+
+}

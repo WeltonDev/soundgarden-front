@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.33);
+    display: none;
+  }
+  
+  #cadastroSucesso {
+    position: fixed;
+    top: 40%;
+    left: 35%;
+    width: 30%;
+    height: 30vh;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .botao {
+    width: 30%;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .cadastroFeito {
+    font-size: 1.5rem;
+  }
